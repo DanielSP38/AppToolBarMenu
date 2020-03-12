@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -46,31 +47,35 @@ public class MainActivity extends AppCompatActivity {
 
 
                 break;
-        }
-        switch (item.getItemId()) {
+
             case R.id.mAlterar:
                 Toast.makeText(getApplicationContext(), "cliquei no alterar", Toast.LENGTH_SHORT).show();
 
 
                 break;
-        }
-        switch (item.getItemId()) {
+
             case R.id.mExcluir:
                 Toast.makeText(getApplicationContext(), "cliquei no exluir", Toast.LENGTH_SHORT).show();
 
 
                 break;
-        }
-        switch (item.getItemId()) {
+
             case R.id.mBuscar:
                 Toast.makeText(getApplicationContext(), "cliquei no buscar", Toast.LENGTH_SHORT).show();
-
-
                 break;
-        }
-        switch (item.getItemId()) {
+
+            case R.id.mAbrir:
+                startActivity(new Intent(getApplicationContext(), SubMenu_Activity.class));
+                break;
+
+                case R.id.mAbrirGrupo:
+                startActivity(new Intent(getApplicationContext(),GrupoMenu_Activity.class) );
+                break;
+
+
             case R.id.mSair:
                 Toast.makeText(getApplicationContext(), "cliquei no sair", Toast.LENGTH_SHORT).show();
+                finish();
 
 
                 break;

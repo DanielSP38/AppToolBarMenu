@@ -6,16 +6,16 @@
         android:title="Arquivo">
         <menu>
             <item
-                android:id="@+id/mSalvar"
+                android:id="@+id/mSubSalvar"
                 android:title="Salvar"/>
             <item
-                android:id="@+id/MSubSalvarComo"
+                android:id="@+id/mSubSalvarComo"
                 android:title="Salvar Como"/>
 
 
         </menu>
     </item>
     <item
-        android:id="@+id/MSubfechar"
+        android:id="@+id/mSubfechar"
         android:title="Fechar"/>
 </menu>
